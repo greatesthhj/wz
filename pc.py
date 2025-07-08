@@ -21,3 +21,4 @@ for i in lianjie:
     wenzhang.close()
     with open(title+".txt",'w',encoding="utf-8") as f:
         f.write(content)
+        print(f"已保存文章：{title}.txt")
