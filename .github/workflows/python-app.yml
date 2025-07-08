@@ -26,9 +26,11 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: "3.10"
-    - name: Start pc.py
+    - name: install bs
       run: |
         pip install beautifulsoup4 lxml
+    - name: Start pc.py
+      run: |
         python pc.py
     - name: 'Commit Files'
       id: commit
