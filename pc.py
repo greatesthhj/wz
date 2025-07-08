@@ -1,5 +1,6 @@
 import urllib.request
 import re
+from bs4 import BeautifulSoup
 response = urllib.request.urlopen("http://opinion.people.com.cn/")
 shouye0 = response.read()
 shouyehtml = BeautifulSoup(shouye0, "html.parser")
