@@ -1,5 +1,4 @@
 import urllib.request
-from bs4 import BeautifulSoup
 import re
 response = urllib.request.urlopen("http://opinion.people.com.cn/")
 shouye0 = response.read()
